@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Enjoy Nào</title>
+  <link rel="icon" href="photo/iconweb.jpg">
+</head>
+<body>
+  <div class="background__Img"></div>
+
+    <div class="card">
+      <div class="poster">
+        <img src="photo/VP.jpg">
+      </div>
+      <div class="details">
+        <img src="photo/avtarlogo.png" alt="" class="logo">
+        <h3>Directed by <span>Nguyen Anh</span></h3>
+        <div class="rating">
+          <ion-icon class="rating__star"name="star"></ion-icon>
+          <ion-icon class="rating__star"name="star"></ion-icon>
+          <ion-icon class="rating__star"name="star"></ion-icon>
+          <ion-icon class="rating__star"name="star"></ion-icon>
+          <ion-icon class="rating__star"name="star"></ion-icon>
+          <span>5/5</span>
+        </div>
+        <div class="tags">
+          <span>Chăm Chỉ</span>
+          <span>Xinh Đẹp</span>
+          <span>Dễ Thương</span>
+        </div>
+        <div class="info">
+          <p>Chưa được gặp cô nhiều nên không biết phải tả sao, nhưng mà thấy xinh xắn, dễ thương, còn không biết có chăm chỉ hay không thôi, chắc là có cả chăm chỉ nữa. À mà phong cách trưởng thành mà nhỉ?? <ion-icon name="heart"></ion-icon></p>
+        </div>
+        <div class="cast">
+          <h4>Xem Thêm</h4>
+          <h3>Nhớ là có kèo đi nhậu đấy nhé, đừng quên.</h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      var more = document.querySelector(".cast h4");
+      var displayMore = document.querySelector(".cast h3")
+      more.onclick = function() {
+        more.setAttribute("style", "display: none");
+        displayMore.setAttribute("style", "display: block");
+      }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
